@@ -12,7 +12,7 @@ app.use(express.static("."));
 const SECRET = "mysecretkey";
 
 // MongoDB
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(process.env.MONGODB_URI);
 
 // Schema
 const User = mongoose.model("User", {
